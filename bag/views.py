@@ -65,7 +65,6 @@ def remove_from_bag(request, item_id):
     """ Remove the item from the shopping bag """
 
     try:
-        quantity = int(request.POST.get('quantity'))
         size = None
         if 'product_size' in request.POST:
             size = request.POST['product_size']
